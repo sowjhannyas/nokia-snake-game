@@ -6,15 +6,13 @@ var food;
 var score = 0;
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(400,400);
   w = floor(width / res);
   h = floor(height / res);
-  frameRate(9);
+  frameRate(5);
   s = new Snake();
   foodLocation();
 }
-
-//we are gonna imagine our canvas as though it is on a grid so that we can get our food easily on a square of the grid. so in order to know how many columns and rows we need to divide the canvas by the resoulution and we come to know the no. of col and rows. when we scale up the can 
 
 function draw() {
   scale(res);
@@ -56,5 +54,3 @@ function keyPressed() {
   }
   
 }
-
-
