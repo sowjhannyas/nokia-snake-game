@@ -48,7 +48,7 @@ function Snake() {
 
 
   this.endGame = function() {
-    if (this.x > w - 1 || this.x < 0 || this.y > h - 1 ||       this.y < 0) {
+    if (this.x > col - 1 || this.x < 0 || this.y > row - 1 ||this.y < 0) {
       return true;
     }
   }
