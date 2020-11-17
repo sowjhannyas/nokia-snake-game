@@ -1,14 +1,14 @@
 var res = 20;
 var s;
-var w;
-var h;
+var col;
+var row;
 var food;
 var score = 0;
 
 function setup() {
   createCanvas(400,400);
-  w = floor(width / res);
-  h = floor(height / res);
+  col = floor(width / res);
+  row = floor(height / res);
   frameRate(5);
   s = new Snake();
   foodLocation();
